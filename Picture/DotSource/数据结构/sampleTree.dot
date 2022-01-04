@@ -1,0 +1,15 @@
+graph G {
+    node [shape=circle];
+    // 3, 5, 1, 3, 2, 8, 4, 13, 7, 16, 0
+    node1 -- node2;
+    node1 -- node3;
+    node2 -- node4;
+    node2 -- temp1[weight=10 style="invis"];
+    node2 -- node5;
+    node3 -- node6;
+    node3 -- temp2[weight=10 style="invis"];
+    node3 -- node7;
+    temp1[label=""]
+    temp2[label=""]
+    temp1,temp2[style="invis"]
+}

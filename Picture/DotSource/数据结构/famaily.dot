@@ -1,0 +1,15 @@
+graph G {
+    node [shape=circle fontname="FangSong"];
+    // 3, 5, 1, 3, 2, 8, 4, 13, 7, 16, 0
+    我 -- 儿子;
+    我 -- 女儿;
+    儿子 -- 孙子;
+    儿子 -- temp1[weight=10 style="invis"];
+    儿子 -- 孙女;
+    女儿 -- 外孙子;
+    女儿 -- temp2[weight=10 style="invis"];
+    女儿 -- 外孙女;
+    temp1[label=""]
+    temp2[label=""]
+    temp1,temp2[style="invis"]
+}
